@@ -129,13 +129,18 @@ main img.pequena {
     margin: auto;
 }
 
-main > h1 {
+main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
 }
 
-main > h2 {
+main h2 {
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1em;
+    line-height: 2em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
 
 footer {
