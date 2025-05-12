@@ -23,9 +23,16 @@ function lampBroken() {
 
 }
 
-
-turnOn.addEventListener("click", lampOn);
-turnOff.addEventListener("click", lampOff);
+function lampOnOff() {
+    if (turnOnOff.textContent === "Ligar") {
+        lampOn();
+        turnOnOff.textContent = "Desligar";
+    } else {
+        lampOff();
+        turnOnOff.textContent = "Ligar";
+    }
+}
+turnOnOff.addEventListener("click", lampOnOff);
 lamp.addEventListener("mouseover", lampOn);
 lamp.addEventListener("mouseleave", lampOff);
 lamp.addEventListener("dblclick", lampBroken);
