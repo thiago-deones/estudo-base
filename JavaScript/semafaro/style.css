@@ -15,3 +15,8 @@ main {
 .button {
     width: 80px;
 }
+
+.active {
+    background-color: #4CAF50; /* verde ou qualquer cor que indique "ligado" */
+    color: white;
+}
