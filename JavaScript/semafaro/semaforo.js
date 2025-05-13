@@ -7,10 +7,8 @@ const trafficLight = ( event ) => {
     
 }
 
-const nextIndex = () => {
-    
-    colorIndex = colorIndex < 2 ? ++colorIndex : 0;
-}
+const nextIndex = () => colorIndex = colorIndex < 2 ? ++colorIndex : 0;
+
 
 const changeColor = () => {
     const colores = ['red', 'yellow', 'green'];
