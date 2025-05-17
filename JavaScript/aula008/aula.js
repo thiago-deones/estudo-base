@@ -22,7 +22,7 @@ notas.push(10);
 notas.push(3);
 notas.push(5);
 notas.push(7);
-notas.push(8);
+notas.push(9);
 
 let soma = 0;
 
@@ -30,9 +30,12 @@ for (let i = 0; i < notas.length; i++) {
     soma += notas[i];
 }
 
+let soma2 = notas.reduce((acumulador, nota) => acumulador + nota, 0);
+
 console.log(soma);
 
-console.log('A média é: ' + (soma/notas.length));
+console.log('A média é: ' + (soma/notas.length).toFixed(2));
+
 
 
 
