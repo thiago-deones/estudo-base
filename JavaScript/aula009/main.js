@@ -1,5 +1,11 @@
 
 
-const funcoes = require('./funcoes-auxiliares');
+const { gets, print, maior} = require('./funcoes-auxiliares');
 
-console.log(funcoes.gets());
+print(gets());
+print(gets());
+print(gets());
+print(gets());
+print(gets());
+
+print("Maior valor: " + maior());
