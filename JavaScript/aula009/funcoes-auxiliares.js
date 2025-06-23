@@ -1,7 +1,7 @@
 
 
 function gets() {
-    return 10;
+    return 20;
 }
 
 function print(text) {
