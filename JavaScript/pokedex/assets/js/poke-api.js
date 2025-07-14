@@ -1,5 +1,5 @@
-
-const pokeApi = {}
+// Evita erro de "already been declared"
+var pokeApi = pokeApi || {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
@@ -11,7 +11,6 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 
     pokemon.types = types
     pokemon.type = type
-
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
     return pokemon
@@ -31,5 +30,4 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((jsonBody) => jsonBody.results)
         .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
         .then((detailRequests) => Promise.all(detailRequests))
-        .then((pokemonsDetails) => pokemonsDetails)
 }
